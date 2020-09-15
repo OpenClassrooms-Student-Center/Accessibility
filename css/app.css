@@ -58,10 +58,12 @@ p {
     width: 146px;
 }
 
+.header-svg:focus,
 .header-svg:hover {
     background-color: #000;
 }
 
+.header-svg:focus path,
 .header-svg:hover path {
     fill: #FFEA94;
     stroke: #FFEA94;
