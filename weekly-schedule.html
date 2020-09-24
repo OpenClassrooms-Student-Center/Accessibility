@@ -1,260 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tonight In Gotham - OpenClassrooms</title>
 
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/app.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
     <div class="header-wrapper">
-        <header class="header" role="banner">
-            <a aria-label="Tonight In Gothman" href="#" class="header-svg">
-                <svg role="img" alt="Logo de Batman" width="130" height="46" viewBox="0 0 130 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M43.1341 0.512695H0.893433C19.9876 6.2592 21.2125 19.8957 19.4381 25.9957C61.5071 22.5752 65.2847 44.9797 65.2847 44.9797C69.7492 26.3378 97.8524 24.3424 110.96 25.6537C106.839 11.6979 121.835 3.0781 129.848 0.512695H86.7485C85.6496 9.95338 75.4156 11.0594 70.436 10.4323L69.2341 1.88091C68.6846 2.29138 68.0893 5.24444 67.8604 6.66966H62.5374C62.5374 5.71191 61.6216 3.19212 61.1637 2.05194L59.9617 10.4323C44.8512 10.4323 42.4473 3.81922 43.1341 0.512695Z" fill="black" stroke="black"/>
-                </svg>
+      <header class="header" role="banner">
+        <a aria-label="Tonight In Gotham" href="#" class="header-svg">
+          <svg
+            role="img"
+            alt="Logo de Batman"
+            width="130"
+            height="46"
+            viewBox="0 0 130 46"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M43.1341 0.512695H0.893433C19.9876 6.2592 21.2125 19.8957 19.4381 25.9957C61.5071 22.5752 65.2847 44.9797 65.2847 44.9797C69.7492 26.3378 97.8524 24.3424 110.96 25.6537C106.839 11.6979 121.835 3.0781 129.848 0.512695H86.7485C85.6496 9.95338 75.4156 11.0594 70.436 10.4323L69.2341 1.88091C68.6846 2.29138 68.0893 5.24444 67.8604 6.66966H62.5374C62.5374 5.71191 61.6216 3.19212 61.1637 2.05194L59.9617 10.4323C44.8512 10.4323 42.4473 3.81922 43.1341 0.512695Z"
+              fill="black"
+              stroke="black"
+            />
+          </svg>
+        </a>
+        <nav
+          role="navigation"
+          class="header-navigation"
+          aria-label="main navigation"
+        >
+          <ul>
+            <li class="header-navigation-item">
+              <a href="#">Work</a>
+            </li>
+            <li class="header-navigation-item">
+              <a href="#">Story</a>
+            </li>
+            <li class="header-navigation-item">
+              <a href="#">Villians</a>
+            </li>
+            <li class="header-navigation-item">
+              <a href="#">Gadgets</a>
+            </li>
+          </ul>
+        </nav>
+        <form class="header-search" action="" role="search">
+          <label class="sr-only" for="search">Search</label>
+          <svg
+            role="img"
+            alt=""
+            class="search-icon"
+            width="25"
+            height="22"
+            viewBox="0 0 25 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="10" cy="10" r="9.5" stroke="white" />
+            <line
+              x1="17.3254"
+              y1="15.6204"
+              x2="24.3254"
+              y2="21.6204"
+              stroke="white"
+            />
+          </svg>
+          <input
+            type="search"
+            id="search"
+            name="search"
+            placeholder="search..."
+          />
+        </form>
+        <div class="header-dropdown">
+          <div class="header-dropdown-batman-icon-wrapper">
+            <svg
+              role="img"
+              alt=""
+              class="header-dropdown-batman-icon"
+              width="35"
+              height="53"
+              viewBox="0 0 35 53"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="mask0"
+                mask-type="alpha"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="22"
+                width="35"
+                height="31"
+              >
+                <ellipse
+                  cx="17.4694"
+                  cy="37.0239"
+                  rx="16.5717"
+                  ry="15.0137"
+                  fill="#C4C4C4"
+                />
+              </mask>
+              <g mask="url(#mask0)">
+                <rect
+                  x="-1.55737"
+                  y="0.509216"
+                  width="38.0535"
+                  height="31.3248"
+                  fill="#C4C4C4"
+                />
+              </g>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.5291 0.197937V8.93256C10.3446 9.57737 10.2458 10.2584 10.2458 10.9624C10.2458 15.0301 13.5434 18.3276 17.611 18.3276C21.6787 18.3276 24.9762 15.0301 24.9762 10.9624C24.9762 10.468 24.9275 9.9849 24.8346 9.51776V0.481201L23.1078 6.0601C21.759 4.54877 19.7961 3.59723 17.611 3.59723C15.517 3.59723 13.627 4.47114 12.286 5.87414L10.5291 0.197937Z"
+                fill="#C4C4C4"
+              />
+              <path
+                d="M10.5291 8.93256L11.0098 9.07009L11.0291 9.00268V8.93256H10.5291ZM10.5291 0.197937L11.0068 0.0500952L10.0291 0.197937H10.5291ZM24.8346 9.51776H24.3346V9.56699L24.3442 9.61529L24.8346 9.51776ZM24.8346 0.481201H25.3346L24.357 0.333359L24.8346 0.481201ZM23.1078 6.0601L22.7348 6.39303L23.3238 7.05308L23.5854 6.20794L23.1078 6.0601ZM12.286 5.87414L11.8084 6.02199L12.0599 6.83441L12.6475 6.21962L12.286 5.87414ZM11.0291 8.93256V0.197937H10.0291V8.93256H11.0291ZM10.7458 10.9624C10.7458 10.3053 10.838 9.67062 11.0098 9.07009L10.0484 8.79503C9.85126 9.48411 9.74585 10.2114 9.74585 10.9624H10.7458ZM17.611 17.8276C13.8195 17.8276 10.7458 14.754 10.7458 10.9624H9.74585C9.74585 15.3062 13.2672 18.8276 17.611 18.8276V17.8276ZM24.4762 10.9624C24.4762 14.754 21.4026 17.8276 17.611 17.8276V18.8276C21.9549 18.8276 25.4762 15.3062 25.4762 10.9624H24.4762ZM24.3442 9.61529C24.4308 10.0505 24.4762 10.5009 24.4762 10.9624H25.4762C25.4762 10.435 25.4242 9.91932 25.325 9.42023L24.3442 9.61529ZM24.3346 0.481201V9.51776H25.3346V0.481201H24.3346ZM23.5854 6.20794L25.3122 0.629043L24.357 0.333359L22.6302 5.91226L23.5854 6.20794ZM17.611 4.09723C19.6477 4.09723 21.4768 4.9835 22.7348 6.39303L23.4808 5.72717C22.0412 4.11405 19.9445 3.09723 17.611 3.09723V4.09723ZM12.6475 6.21962C13.8981 4.91121 15.6591 4.09723 17.611 4.09723V3.09723C15.3749 3.09723 13.356 4.03107 11.9246 5.52867L12.6475 6.21962ZM10.0515 0.345779L11.8084 6.02199L12.7637 5.7263L11.0068 0.0500952L10.0515 0.345779Z"
+                fill="#C4C4C4"
+              />
+            </svg>
+          </div>
+          <p>
+            <a
+              class="header-dropdown-link"
+              aria-haspopup="true"
+              aria-expanded="false"
+              href="#"
+            >
+              <span class="header-dropdown-link-content"> Batman </span>
+              <svg
+                width="16"
+                height="10"
+                viewBox="0 0 16 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1.33447L8.00465 8.13311L14.5973 1.33447"
+                  stroke="#E9E9E9"
+                  stroke-width="2"
+                />
+              </svg>
             </a>
-            <nav role="navigation" class="header-navigation" aria-label="main navigation">
-                <ul>
-                    <li class="header-navigation-item">
-                        <a href="#">Work</a>
-                    </li>
-                    <li class="header-navigation-item">
-                        <a href="#">Story</a>
-                    </li>
-                    <li class="header-navigation-item">
-                        <a href="#">Villians</a>
-                    </li>
-                    <li class="header-navigation-item">
-                        <a href="#">Gadgets</a>
-                    </li>
-                </ul>
-            </nav>
-            <form class="header-search" action="" role="search">
-                <label class="sr-only" for="search">Search</label>
-                <svg role="img" alt="" class="search-icon" width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="10" cy="10" r="9.5" stroke="white"/>
-                    <line x1="17.3254" y1="15.6204" x2="24.3254" y2="21.6204" stroke="white"/>
-                </svg>
-                <input type="search" id="search" name="search" placeholder="search...">
-            </form>
-            <div class="header-dropdown">
-                <div class="header-dropdown-batman-icon-wrapper">
-                    <svg role="img" alt="" class="header-dropdown-batman-icon" width="35" height="53" viewBox="0 0 35 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="22" width="35" height="31">
-                        <ellipse cx="17.4694" cy="37.0239" rx="16.5717" ry="15.0137" fill="#C4C4C4"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                        <rect x="-1.55737" y="0.509216" width="38.0535" height="31.3248" fill="#C4C4C4"/>
-                        </g>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5291 0.197937V8.93256C10.3446 9.57737 10.2458 10.2584 10.2458 10.9624C10.2458 15.0301 13.5434 18.3276 17.611 18.3276C21.6787 18.3276 24.9762 15.0301 24.9762 10.9624C24.9762 10.468 24.9275 9.9849 24.8346 9.51776V0.481201L23.1078 6.0601C21.759 4.54877 19.7961 3.59723 17.611 3.59723C15.517 3.59723 13.627 4.47114 12.286 5.87414L10.5291 0.197937Z" fill="#C4C4C4"/>
-                        <path d="M10.5291 8.93256L11.0098 9.07009L11.0291 9.00268V8.93256H10.5291ZM10.5291 0.197937L11.0068 0.0500952L10.0291 0.197937H10.5291ZM24.8346 9.51776H24.3346V9.56699L24.3442 9.61529L24.8346 9.51776ZM24.8346 0.481201H25.3346L24.357 0.333359L24.8346 0.481201ZM23.1078 6.0601L22.7348 6.39303L23.3238 7.05308L23.5854 6.20794L23.1078 6.0601ZM12.286 5.87414L11.8084 6.02199L12.0599 6.83441L12.6475 6.21962L12.286 5.87414ZM11.0291 8.93256V0.197937H10.0291V8.93256H11.0291ZM10.7458 10.9624C10.7458 10.3053 10.838 9.67062 11.0098 9.07009L10.0484 8.79503C9.85126 9.48411 9.74585 10.2114 9.74585 10.9624H10.7458ZM17.611 17.8276C13.8195 17.8276 10.7458 14.754 10.7458 10.9624H9.74585C9.74585 15.3062 13.2672 18.8276 17.611 18.8276V17.8276ZM24.4762 10.9624C24.4762 14.754 21.4026 17.8276 17.611 17.8276V18.8276C21.9549 18.8276 25.4762 15.3062 25.4762 10.9624H24.4762ZM24.3442 9.61529C24.4308 10.0505 24.4762 10.5009 24.4762 10.9624H25.4762C25.4762 10.435 25.4242 9.91932 25.325 9.42023L24.3442 9.61529ZM24.3346 0.481201V9.51776H25.3346V0.481201H24.3346ZM23.5854 6.20794L25.3122 0.629043L24.357 0.333359L22.6302 5.91226L23.5854 6.20794ZM17.611 4.09723C19.6477 4.09723 21.4768 4.9835 22.7348 6.39303L23.4808 5.72717C22.0412 4.11405 19.9445 3.09723 17.611 3.09723V4.09723ZM12.6475 6.21962C13.8981 4.91121 15.6591 4.09723 17.611 4.09723V3.09723C15.3749 3.09723 13.356 4.03107 11.9246 5.52867L12.6475 6.21962ZM10.0515 0.345779L11.8084 6.02199L12.7637 5.7263L11.0068 0.0500952L10.0515 0.345779Z" fill="#C4C4C4"/>
-                    </svg>
-                </div>
-                <p>
-                    <a class="header-dropdown-link" aria-haspopup="true" aria-expanded="false" href="#">
-                        <span class="header-dropdown-link-content">
-                            Batman
-                        </span>
-                        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1.33447L8.00465 8.13311L14.5973 1.33447" stroke="#E9E9E9" stroke-width="2"/>
-                        </svg>
-                    </a>
-                </p>
-                <ul class="dropdown">
-                    <li>
-                        <a href="">
-                            My villians
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            My gadgets
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            Switch profile
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </header>
+          </p>
+          <ul class="dropdown">
+            <li>
+              <a href=""> My villians </a>
+            </li>
+            <li>
+              <a href=""> My gadgets </a>
+            </li>
+            <li>
+              <a href=""> Switch profile </a>
+            </li>
+          </ul>
+        </div>
+      </header>
     </div>
     <main class="content">
-        <section>
-            <h1>Weekly schedule</h1>
-            <table class="weekly-content-table">
-                <caption class="sr-only">The Batman's regular weekly schedule </caption>
-                <thead>
-                    <tr>
-                        <td></td>
-                        <th scope="row">Monday</th>
-                        <th scope="row">Tuesday</th>
-                        <th scope="row">Wednesday</th>
-                        <th scope="row">Thursday</th>
-                        <th scope="row">Friday</th>
-                        <th scope="row">Saturday</th>
-                        <th scope="row">Sunday</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="col">10:00-11:00</th>
-                        <td rowspan="3">Martial Arts</td>
-                        <td rowspan="3">Aerobics</td>
-                        <td rowspan="3">Martial Arts</td>
-                        <td rowspan="3">Aerobics</td>
-                        <td rowspan="3">Martial Arts</td>
-                        <td rowspan="8">Sailing</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="col">11:00-12:00</th>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="col">12:00-13:00</th>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="col">13:00-14:00</th>
-                        <td colspan="5">Lunch</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="col">14:00-15:00</th>
-                        <td rowspan="7">Paragliding</td>
-                        <td></td>
-                        <td rowspan="7">Motocycling tricks</td>
-                        <td></td>
-                        <td rowspan="7">Rock climbing</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="col">15:00-16:00</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="col">16:00-17:00</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="col">17:00-18:00</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="col">18:00-19:00</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td rowspan="3">Bruce and Alfred's Movie Night</td>
-                    </tr>
-                    <tr>
-                        <th scope="col">19:00-20:00</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="col">20:00-21:00</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="col">21:00-23:00</th>
-                        <td colspan="7">Patrol the streets</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <div class="decorative-aside">
-        </div>
+      <section>
+        <h1>Weekly schedule</h1>
+        <table class="weekly-content-table">
+          <caption class="sr-only">
+            The Batman's regular weekly schedule
+          </caption>
+          <thead>
+            <tr>
+              <td></td>
+              <th scope="row">Monday</th>
+              <th scope="row">Tuesday</th>
+              <th scope="row">Wednesday</th>
+              <th scope="row">Thursday</th>
+              <th scope="row">Friday</th>
+              <th scope="row">Saturday</th>
+              <th scope="row">Sunday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="col">10:00-11:00</th>
+              <td rowspan="3">Martial Arts</td>
+              <td rowspan="3">Aerobics</td>
+              <td rowspan="3">Martial Arts</td>
+              <td rowspan="3">Aerobics</td>
+              <td rowspan="3">Martial Arts</td>
+              <td rowspan="8">Sailing</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="col">11:00-12:00</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="col">12:00-13:00</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="col">13:00-14:00</th>
+              <td colspan="5">Lunch</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="col">14:00-15:00</th>
+              <td rowspan="7">Paragliding</td>
+              <td></td>
+              <td rowspan="7">Motocycling tricks</td>
+              <td></td>
+              <td rowspan="7">Rock climbing</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="col">15:00-16:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="col">16:00-17:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="col">17:00-18:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="col">18:00-19:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td rowspan="3">Bruce and Alfred's Movie Night</td>
+            </tr>
+            <tr>
+              <th scope="col">19:00-20:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="col">20:00-21:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="col">21:00-23:00</th>
+              <td colspan="7">Patrol the streets</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <div class="decorative-aside"></div>
     </main>
     <footer class="footer" role="contentinfo">
-        <nav class="footer-navigation" aria-label="footer navigation">
-            <ul>
-                <h3 class="footer-title">Contact</h3>
-                <li>
-                    <a class="footer-navigation-link" href="#">
-                        Call Alfred
-                    </a>
-                </li>
-                <li>
-                    <a class="footer-navigation-link" href="#">
-                        Light the bat signal
-                    </a>
-                </li>
-                <li>
-                    <a class="footer-navigation-link" href="#">
-                        Turn yourself in
-                    </a>
-                </li>
-                <li>
-                    <a class="footer-navigation-link" href="#">
-                        Tell us what you think
-                    </a>
-                </li>
-            </ul>
-            <ul>
-                <h3 class="footer-title">Careers</h3>
-                <li>
-                    <a class="footer-navigation-link" href="#">
-                        Getting started
-                    </a>
-                </li>
-                <li>
-                    <a class="footer-navigation-link" href="#">
-                        Available positions
-                    </a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                <h3 class="footer-title">Follow</h3>
-                </li>
-                <li>
-                    <a class="footer-social-icon" href="#">
-                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0ZM21.8733 19.0668L21.8261 18.2883C21.6845 16.2704 22.9278 14.4273 24.8951 13.7123C25.6191 13.4581 26.8466 13.4263 27.6493 13.6487C27.9641 13.7441 28.5621 14.0619 28.987 14.3479L29.7582 14.8722L30.6081 14.6021C31.0802 14.4591 31.7098 14.2207 31.9931 14.0619C32.2606 13.9189 32.4967 13.8394 32.4967 13.8871C32.4967 14.1572 31.9144 15.0787 31.4265 15.5872C30.7655 16.3022 30.9543 16.3657 32.2921 15.8891C33.0947 15.619 33.1105 15.619 32.9531 15.9208C32.8587 16.0797 32.3708 16.6358 31.8514 17.1443C30.9701 18.0182 30.9229 18.1135 30.9229 18.8444C30.9229 19.9725 30.3878 22.324 29.8527 23.611C28.8611 26.0261 26.7365 28.5207 24.6118 29.7759C21.6215 31.5395 17.6397 31.9844 14.2875 30.9516C13.1701 30.6021 11.25 29.7123 11.25 29.5534C11.25 29.5058 11.8323 29.4422 12.5405 29.4263C14.0199 29.3945 15.4993 28.9814 16.7584 28.2505L17.6083 27.7421L16.6325 27.4084C15.2475 26.9318 14.0042 25.8354 13.6894 24.8027C13.595 24.469 13.6265 24.4531 14.5078 24.4531L15.4206 24.4372L14.6495 24.0718C13.7367 23.611 12.9025 22.8325 12.4933 22.038C12.1943 21.466 11.8166 20.0201 11.9267 19.9089C11.9582 19.8613 12.2887 19.9566 12.6664 20.0837C13.7524 20.4809 13.894 20.3856 13.2645 19.7183C12.0841 18.5107 11.7222 16.7153 12.2887 15.0152L12.5563 14.2525L13.595 15.2853C15.7197 17.3667 18.2221 18.606 21.0864 18.9715L21.8733 19.0668Z" fill="white"/>
-                        </svg>
-                        <span class="sr-only">Twitter</span>
-                    </a>
-                    <a class="footer-social-icon" href="#">
-                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M45 22.5C45 10.0723 34.9277 0 22.5 0C10.0723 0 0 10.0723 0 22.5C0 33.7324 8.22656 43.04 18.9844 44.7275V29.0039H13.2715V22.5H18.9844V17.543C18.9844 11.9048 22.3418 8.78906 27.4834 8.78906C29.9443 8.78906 32.5195 9.22851 32.5195 9.22851V14.7656H29.6807C26.8857 14.7656 26.0156 16.5015 26.0156 18.2812V22.5H32.2559L31.2583 29.0039H26.0156V44.7275C36.7734 43.04 45 33.7324 45 22.5Z" fill="white"/>
-                        </svg>
-                        <span class="sr-only">Facebook</span>
-                    </a>
-                    <a class="footer-social-icon" href="#">
-                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0ZM17.5531 10.5725C18.8331 10.5142 19.2421 10.5 22.5011 10.5H22.4974C25.7574 10.5 26.1649 10.5142 27.4449 10.5725C28.7224 10.631 29.595 10.8332 30.36 11.13C31.15 11.4363 31.8175 11.8463 32.485 12.5138C33.1525 13.1808 33.5625 13.8503 33.87 14.6395C34.165 15.4025 34.3675 16.2746 34.4275 17.5521C34.485 18.8321 34.5 19.2411 34.5 22.5001C34.5 25.7592 34.485 26.1672 34.4275 27.4472C34.3675 28.7242 34.165 29.5964 33.87 30.3597C33.5625 31.1487 33.1525 31.8182 32.485 32.4852C31.8182 33.1527 31.1497 33.5637 30.3607 33.8702C29.5972 34.167 28.7242 34.3692 27.4467 34.4277C26.1667 34.486 25.7589 34.5002 22.4996 34.5002C19.2408 34.5002 18.8321 34.486 17.5521 34.4277C16.2748 34.3692 15.4026 34.167 14.639 33.8702C13.8503 33.5637 13.1808 33.1527 12.514 32.4852C11.8468 31.8182 11.4368 31.1487 11.13 30.3595C10.8335 29.5964 10.6313 28.7244 10.5725 27.4469C10.5145 26.1669 10.5 25.7592 10.5 22.5001C10.5 19.2411 10.515 18.8318 10.5723 17.5518C10.6298 16.2748 10.8323 15.4025 11.1298 14.6393C11.4373 13.8503 11.8473 13.1808 12.5148 12.5138C13.1818 11.8465 13.8513 11.4365 14.6405 11.13C15.4036 10.8332 16.2756 10.631 17.5531 10.5725Z" fill="white"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.4246 12.6625C21.6336 12.6622 21.8585 12.6623 22.1011 12.6624L22.5011 12.6625C25.7051 12.6625 26.0849 12.674 27.3502 12.7315C28.5202 12.785 29.1552 12.9805 29.5782 13.1448C30.1382 13.3623 30.5374 13.6223 30.9572 14.0423C31.3772 14.4623 31.6372 14.8623 31.8552 15.4223C32.0194 15.8448 32.2152 16.4798 32.2685 17.6498C32.326 18.9149 32.3385 19.2949 32.3385 22.4974C32.3385 25.6999 32.326 26.0799 32.2685 27.3449C32.215 28.515 32.0194 29.15 31.8552 29.5725C31.6377 30.1325 31.3772 30.5312 30.9572 30.951C30.5372 31.371 30.1384 31.631 29.5782 31.8485C29.1557 32.0135 28.5202 32.2085 27.3502 32.262C26.0851 32.3195 25.7051 32.332 22.5011 32.332C19.2968 32.332 18.9171 32.3195 17.652 32.262C16.482 32.208 15.847 32.0125 15.4238 31.8482C14.8638 31.6307 14.4638 31.3707 14.0438 30.9507C13.6238 30.5307 13.3638 30.1317 13.1458 29.5715C12.9815 29.149 12.7857 28.514 12.7325 27.3439C12.675 26.0789 12.6635 25.6989 12.6635 22.4944C12.6635 19.2899 12.675 18.9119 12.7325 17.6468C12.786 16.4768 12.9815 15.8418 13.1458 15.4188C13.3633 14.8588 13.6238 14.4588 14.0438 14.0388C14.4638 13.6188 14.8638 13.3588 15.4238 13.1408C15.8468 12.9758 16.482 12.7808 17.652 12.727C18.7591 12.677 19.1881 12.662 21.4246 12.6595V12.6625ZM28.9067 14.6551C28.1117 14.6551 27.4666 15.2993 27.4666 16.0946C27.4666 16.8896 28.1117 17.5346 28.9067 17.5346C29.7017 17.5346 30.3467 16.8896 30.3467 16.0946C30.3467 15.2996 29.7017 14.6546 28.9067 14.6546V14.6551ZM16.3385 22.5001C16.3385 19.0969 19.0977 16.3377 22.5009 16.3376C25.9041 16.3376 28.6627 19.0969 28.6627 22.5001C28.6627 25.9034 25.9044 28.6615 22.5011 28.6615C19.0978 28.6615 16.3385 25.9034 16.3385 22.5001Z" fill="white"/>
-                            <path d="M22.5011 18.5001C24.7102 18.5001 26.5012 20.2908 26.5012 22.5001C26.5012 24.7091 24.7102 26.5001 22.5011 26.5001C20.2919 26.5001 18.5011 24.7091 18.5011 22.5001C18.5011 20.2908 20.2919 18.5001 22.5011 18.5001Z" fill="white"/>
-                        </svg>
-                        <span class="sr-only">Instagram</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <div class="footer-patterns">
-            <h3 class="footer-title">
-                Partners
-            </h3>
-            <img class="footer-police-logo" src="./images/police.png" alt="City of Gothman Police Department">
-        </div>
+      <nav class="footer-navigation" aria-label="footer navigation">
+        <ul>
+          <h3 class="footer-title">Contact</h3>
+          <li>
+            <a class="footer-navigation-link" href="#"> Call Alfred </a>
+          </li>
+          <li>
+            <a class="footer-navigation-link" href="#">
+              Light the bat signal
+            </a>
+          </li>
+          <li>
+            <a class="footer-navigation-link" href="#"> Turn yourself in </a>
+          </li>
+          <li>
+            <a class="footer-navigation-link" href="#">
+              Tell us what you think
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <h3 class="footer-title">Careers</h3>
+          <li>
+            <a class="footer-navigation-link" href="#"> Getting started </a>
+          </li>
+          <li>
+            <a class="footer-navigation-link" href="#"> Available positions </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h3 class="footer-title">Follow</h3>
+          </li>
+          <li>
+            <a class="footer-social-icon" href="#">
+              <svg
+                width="45"
+                height="45"
+                viewBox="0 0 45 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0ZM21.8733 19.0668L21.8261 18.2883C21.6845 16.2704 22.9278 14.4273 24.8951 13.7123C25.6191 13.4581 26.8466 13.4263 27.6493 13.6487C27.9641 13.7441 28.5621 14.0619 28.987 14.3479L29.7582 14.8722L30.6081 14.6021C31.0802 14.4591 31.7098 14.2207 31.9931 14.0619C32.2606 13.9189 32.4967 13.8394 32.4967 13.8871C32.4967 14.1572 31.9144 15.0787 31.4265 15.5872C30.7655 16.3022 30.9543 16.3657 32.2921 15.8891C33.0947 15.619 33.1105 15.619 32.9531 15.9208C32.8587 16.0797 32.3708 16.6358 31.8514 17.1443C30.9701 18.0182 30.9229 18.1135 30.9229 18.8444C30.9229 19.9725 30.3878 22.324 29.8527 23.611C28.8611 26.0261 26.7365 28.5207 24.6118 29.7759C21.6215 31.5395 17.6397 31.9844 14.2875 30.9516C13.1701 30.6021 11.25 29.7123 11.25 29.5534C11.25 29.5058 11.8323 29.4422 12.5405 29.4263C14.0199 29.3945 15.4993 28.9814 16.7584 28.2505L17.6083 27.7421L16.6325 27.4084C15.2475 26.9318 14.0042 25.8354 13.6894 24.8027C13.595 24.469 13.6265 24.4531 14.5078 24.4531L15.4206 24.4372L14.6495 24.0718C13.7367 23.611 12.9025 22.8325 12.4933 22.038C12.1943 21.466 11.8166 20.0201 11.9267 19.9089C11.9582 19.8613 12.2887 19.9566 12.6664 20.0837C13.7524 20.4809 13.894 20.3856 13.2645 19.7183C12.0841 18.5107 11.7222 16.7153 12.2887 15.0152L12.5563 14.2525L13.595 15.2853C15.7197 17.3667 18.2221 18.606 21.0864 18.9715L21.8733 19.0668Z"
+                  fill="white"
+                />
+              </svg>
+              <span class="sr-only">Twitter</span>
+            </a>
+            <a class="footer-social-icon" href="#">
+              <svg
+                width="45"
+                height="45"
+                viewBox="0 0 45 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M45 22.5C45 10.0723 34.9277 0 22.5 0C10.0723 0 0 10.0723 0 22.5C0 33.7324 8.22656 43.04 18.9844 44.7275V29.0039H13.2715V22.5H18.9844V17.543C18.9844 11.9048 22.3418 8.78906 27.4834 8.78906C29.9443 8.78906 32.5195 9.22851 32.5195 9.22851V14.7656H29.6807C26.8857 14.7656 26.0156 16.5015 26.0156 18.2812V22.5H32.2559L31.2583 29.0039H26.0156V44.7275C36.7734 43.04 45 33.7324 45 22.5Z"
+                  fill="white"
+                />
+              </svg>
+              <span class="sr-only">Facebook</span>
+            </a>
+            <a class="footer-social-icon" href="#">
+              <svg
+                width="45"
+                height="45"
+                viewBox="0 0 45 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0ZM17.5531 10.5725C18.8331 10.5142 19.2421 10.5 22.5011 10.5H22.4974C25.7574 10.5 26.1649 10.5142 27.4449 10.5725C28.7224 10.631 29.595 10.8332 30.36 11.13C31.15 11.4363 31.8175 11.8463 32.485 12.5138C33.1525 13.1808 33.5625 13.8503 33.87 14.6395C34.165 15.4025 34.3675 16.2746 34.4275 17.5521C34.485 18.8321 34.5 19.2411 34.5 22.5001C34.5 25.7592 34.485 26.1672 34.4275 27.4472C34.3675 28.7242 34.165 29.5964 33.87 30.3597C33.5625 31.1487 33.1525 31.8182 32.485 32.4852C31.8182 33.1527 31.1497 33.5637 30.3607 33.8702C29.5972 34.167 28.7242 34.3692 27.4467 34.4277C26.1667 34.486 25.7589 34.5002 22.4996 34.5002C19.2408 34.5002 18.8321 34.486 17.5521 34.4277C16.2748 34.3692 15.4026 34.167 14.639 33.8702C13.8503 33.5637 13.1808 33.1527 12.514 32.4852C11.8468 31.8182 11.4368 31.1487 11.13 30.3595C10.8335 29.5964 10.6313 28.7244 10.5725 27.4469C10.5145 26.1669 10.5 25.7592 10.5 22.5001C10.5 19.2411 10.515 18.8318 10.5723 17.5518C10.6298 16.2748 10.8323 15.4025 11.1298 14.6393C11.4373 13.8503 11.8473 13.1808 12.5148 12.5138C13.1818 11.8465 13.8513 11.4365 14.6405 11.13C15.4036 10.8332 16.2756 10.631 17.5531 10.5725Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M21.4246 12.6625C21.6336 12.6622 21.8585 12.6623 22.1011 12.6624L22.5011 12.6625C25.7051 12.6625 26.0849 12.674 27.3502 12.7315C28.5202 12.785 29.1552 12.9805 29.5782 13.1448C30.1382 13.3623 30.5374 13.6223 30.9572 14.0423C31.3772 14.4623 31.6372 14.8623 31.8552 15.4223C32.0194 15.8448 32.2152 16.4798 32.2685 17.6498C32.326 18.9149 32.3385 19.2949 32.3385 22.4974C32.3385 25.6999 32.326 26.0799 32.2685 27.3449C32.215 28.515 32.0194 29.15 31.8552 29.5725C31.6377 30.1325 31.3772 30.5312 30.9572 30.951C30.5372 31.371 30.1384 31.631 29.5782 31.8485C29.1557 32.0135 28.5202 32.2085 27.3502 32.262C26.0851 32.3195 25.7051 32.332 22.5011 32.332C19.2968 32.332 18.9171 32.3195 17.652 32.262C16.482 32.208 15.847 32.0125 15.4238 31.8482C14.8638 31.6307 14.4638 31.3707 14.0438 30.9507C13.6238 30.5307 13.3638 30.1317 13.1458 29.5715C12.9815 29.149 12.7857 28.514 12.7325 27.3439C12.675 26.0789 12.6635 25.6989 12.6635 22.4944C12.6635 19.2899 12.675 18.9119 12.7325 17.6468C12.786 16.4768 12.9815 15.8418 13.1458 15.4188C13.3633 14.8588 13.6238 14.4588 14.0438 14.0388C14.4638 13.6188 14.8638 13.3588 15.4238 13.1408C15.8468 12.9758 16.482 12.7808 17.652 12.727C18.7591 12.677 19.1881 12.662 21.4246 12.6595V12.6625ZM28.9067 14.6551C28.1117 14.6551 27.4666 15.2993 27.4666 16.0946C27.4666 16.8896 28.1117 17.5346 28.9067 17.5346C29.7017 17.5346 30.3467 16.8896 30.3467 16.0946C30.3467 15.2996 29.7017 14.6546 28.9067 14.6546V14.6551ZM16.3385 22.5001C16.3385 19.0969 19.0977 16.3377 22.5009 16.3376C25.9041 16.3376 28.6627 19.0969 28.6627 22.5001C28.6627 25.9034 25.9044 28.6615 22.5011 28.6615C19.0978 28.6615 16.3385 25.9034 16.3385 22.5001Z"
+                  fill="white"
+                />
+                <path
+                  d="M22.5011 18.5001C24.7102 18.5001 26.5012 20.2908 26.5012 22.5001C26.5012 24.7091 24.7102 26.5001 22.5011 26.5001C20.2919 26.5001 18.5011 24.7091 18.5011 22.5001C18.5011 20.2908 20.2919 18.5001 22.5011 18.5001Z"
+                  fill="white"
+                />
+              </svg>
+              <span class="sr-only">Instagram</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer-patterns">
+        <h3 class="footer-title">Partners</h3>
+        <img
+          class="footer-police-logo"
+          src="./images/police.png"
+          alt="City of Gotham Police Department"
+        />
+      </div>
     </footer>
 
     <script src="./js/app.js"></script>
-</body>
+  </body>
 </html>
